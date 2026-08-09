@@ -52,8 +52,8 @@ export default function Home() {
           </p>
 
           <h5 className="instruction-note">
-            <strong>Jangan gunakan nama asli.</strong>{" "}
-            Gunakan &lt;nama panggilan&gt;-&lt;nama subdit&gt; sebagai nickname.
+            <strong>Jangan gunakan nama asli.</strong>{" "}<br>
+            Gunakan &lt;nama panggilan&gt;-&lt;nama subdit&gt; sebagai nickname.<br>
             Contoh: Ranti-PIKSI
           </h5>
 
