@@ -51,7 +51,7 @@ export default function Home() {
             selama Rapid Rush berlangsung.
           </p>
 
-          <p className="description">Jangan gunakan nama asli. Gunakan &lt;nama panggilan&gt;-&lt;nama subdit&gt; sebagai nickname. Contoh: Ranti-PIKSI</p>
+          <h6>Jangan gunakan nama asli. Gunakan &lt;nama panggilan&gt;-&lt;nama subdit&gt; sebagai nickname. Contoh: Ranti-PIKSI</h6>
 
           <div className="action-area">
             <a className="button" href="/go">
