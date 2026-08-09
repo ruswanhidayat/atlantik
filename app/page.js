@@ -1,6 +1,29 @@
 export const dynamic = "force-dynamic";
 
+function getAssignmentInfo() {
+  const mode = (
+    process.env.ASSIGNMENT_MODE ?? "sticky"
+  ).toLowerCase();
+
+  const rawTtl =
+    process.env.ASSIGNMENT_TTL_MINUTES ?? "30";
+
+  const parsedTtl = Number.parseInt(rawTtl, 10);
+
+  const ttl =
+    Number.isFinite(parsedTtl) && parsedTtl > 0
+      ? parsedTtl
+      : 30;
+
+  return {
+    mode,
+    ttl,
+  };
+}
+
 export default function Home() {
+  const { mode, ttl } = getAssignmentInfo();
+
   return (
     <main className="page">
       <section className="rapid-card">
@@ -9,7 +32,10 @@ export default function Home() {
         <div className="rapid-card__content">
           <div className="rapid-card__header">
             <div>
-              <p className="eyebrow">Mission: Grand Champion</p>
+              <p className="eyebrow">
+                Mission: Grand Champion
+              </p>
+
               <h1>Rapid Rush</h1>
             </div>
 
@@ -20,20 +46,27 @@ export default function Home() {
           </div>
 
           <p className="description">
-            Dapatkan satu set quiz secara acak untuk memulai permainan.
-            Gunakan perangkat dan browser yang sama selama Rapid Rush berlangsung.
+            Dapatkan satu set quiz secara acak untuk memulai
+            permainan. Gunakan perangkat dan browser yang sama
+            selama Rapid Rush berlangsung.
           </p>
 
           <div className="action-area">
             <a className="button" href="/go">
               Mulai Quiz
-              <span className="button-arrow" aria-hidden="true">
+
+              <span
+                className="button-arrow"
+                aria-hidden="true"
+              >
                 →
               </span>
             </a>
 
             <p className="note">
-              Set yang diterima akan tetap sama pada perangkat ini.
+              {mode === "random"
+                ? "Mode: Random · Set akan diacak setiap kali permainan dimulai."
+                : `Mode: Sticky · Set akan tetap sama pada perangkat ini selama ${ttl} menit.`}
             </p>
           </div>
         </div>
