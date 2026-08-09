@@ -51,6 +51,8 @@ export default function Home() {
             selama Rapid Rush berlangsung.
           </p>
 
+          <h5>Jangan gunakan nama asli. Gunakan &lt;nama panggilan&gt; - &lt;nama subdit&gt; sebagai nickname.</h5>
+
           <div className="action-area">
             <a className="button" href="/go">
               Mulai Quiz
