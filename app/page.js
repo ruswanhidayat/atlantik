@@ -58,6 +58,7 @@ export default function Home() {
             <br />
             Contoh: Ranti-PIKSI
             <br />
+            <br />
             <strong>Jika nickname bukan nama asli, maka skor tidak akan diperhitungkan.</strong>{" "}
           </h5>
 
