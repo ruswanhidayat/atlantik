@@ -52,11 +52,13 @@ export default function Home() {
           </p>
 
           <h5 className="instruction-note">
-            <strong>Jangan gunakan nama asli.</strong>{" "}
+            <strong>Harap gunakan nama asli.</strong>{" "}
             <br />
             Gunakan &lt;nama panggilan&gt;-&lt;nama subdit&gt; sebagai nickname.
             <br />
             Contoh: Ranti-PIKSI
+            <br />
+            <strong>Jika nickname bukan nama asli, maka skor tidak akan diperhitungkan.</strong>{" "}
           </h5>
 
           <div className="action-area">
