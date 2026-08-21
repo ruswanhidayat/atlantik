@@ -89,7 +89,7 @@ export default function Home() {
           <div className="finished-notice">
             <strong>Rapid Rush telah berakhir.</strong>
             <span>
-              Quiz sudah ditutup dan tidak dapat dimainkan kembali.
+              Quiz sudah ditutup. Silakan cek portal untuk melihat daftar pemain yang lolos ke tahap selanjutnya.
             </span>
           </div>
 
