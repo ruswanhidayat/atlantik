@@ -345,3 +345,35 @@ h1 {
   font-weight: 650;
   color: var(--text);
 }
+
+.finished-notice {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 22px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.finished-notice strong {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.finished-notice span {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.button--disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  filter: grayscale(0.3);
+}
+
+.button--disabled:hover {
+  transform: none;
+}

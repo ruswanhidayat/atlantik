@@ -45,7 +45,7 @@ export default function Home() {
             </span>
           </div>
 
-          <p className="description">
+          {/* <p className="description">
             Dapatkan satu set quiz secara acak untuk memulai
             permainan. Gunakan perangkat dan browser yang sama
             selama Rapid Rush berlangsung.
@@ -78,6 +78,28 @@ export default function Home() {
               {mode === "random"
                 ? "Mode: Random · Set akan diacak setiap kali permainan dimulai."
                 : `Mode: Sticky · Set akan tetap sama pada perangkat ini selama ${ttl} menit.`}
+            </p>
+          </div> */}
+          <p className="description">
+            Rapid Rush telah selesai.
+            Terima kasih atas partisipasi seluruh peserta dalam
+            Mission: Grand Champion — Phase #1.
+          </p>
+
+          <div className="finished-notice">
+            <strong>Rapid Rush telah berakhir.</strong>
+            <span>
+              Quiz sudah ditutup dan tidak dapat dimainkan kembali.
+            </span>
+          </div>
+
+          <div className="action-area">
+            <button className="button button--disabled" type="button" disabled>
+              Rapid Rush Selesai
+            </button>
+
+            <p className="note">
+              Mission: Grand Champion · Phase #1 telah selesai.
             </p>
           </div>
         </div>
