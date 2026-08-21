@@ -370,10 +370,8 @@ h1 {
 
 .button--disabled {
   cursor: not-allowed;
-  opacity: 1;
-  background: #a7a0df;
-  color: #fff;
-  box-shadow: none;
+  opacity: 0.55;
+  filter: grayscale(0.3);
 }
 
 .button--disabled:hover {
